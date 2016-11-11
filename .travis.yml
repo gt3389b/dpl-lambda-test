@@ -1,0 +1,14 @@
+deploy:
+  provider: lambda
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  function_name: test_function
+  region: eu-central-1
+  handler_name: myHandler
+  zip: index.js
+  role: LambdaBasicExecutor
+  edge:
+  	source: vvondra/dpl
+    branch: update_lambda_provider
+  on:
+  	all_branches: true
