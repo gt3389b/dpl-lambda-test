@@ -10,7 +10,7 @@ deploy:
   region: eu-central-1
   handler_name: myHandler
   zip: index.js
-  role: LambdaBasicExecutor
+  role: arn:aws:iam::148075341626:role/LambdaBasicExecutor
   edge:
     source: vvondra/dpl
     branch: update_lambda_provider
