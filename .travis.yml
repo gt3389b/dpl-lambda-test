@@ -8,7 +8,7 @@ deploy:
   zip: index.js
   role: LambdaBasicExecutor
   edge:
-  	source: vvondra/dpl
+    source: vvondra/dpl
     branch: update_lambda_provider
   on:
-  	all_branches: true
+    all_branches: true
