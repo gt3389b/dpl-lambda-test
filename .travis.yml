@@ -9,6 +9,7 @@ deploy:
   function_name: test_function_3
   region: eu-central-1
   handler_name: myHandler
+  publish: true
   zip: index.js
   role: arn:aws:iam::148075341626:role/LambdaBasicExecutor
   edge:
