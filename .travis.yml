@@ -9,11 +9,9 @@ deploy:
   function_name: test_function_4
   region: us-east-1
   handler_name: myHandler
-  publish: true
-  zip: index.js
+  runtime: nodejs4.3
+  publish: true 
+  zip: index.js 
   role: arn:aws:iam::710516728004:role/lambda_basic_execution
-  edge:
-    source: gt3389b/dpl
-    branch: update_lambda_provider
   on:
     all_branches: true
