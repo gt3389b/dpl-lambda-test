@@ -7,13 +7,13 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   function_name: test_function_4
-  region: eu-central-1
+  region: us-east-1
   handler_name: myHandler
   publish: true
   zip: index.js
-  role: arn:aws:iam::148075341626:role/LambdaBasicExecutor
+  role: arn:aws:iam::710516728004:role/lambda_basic_execution
   edge:
-    source: vvondra/dpl
+    source: gt3389b/dpl
     branch: update_lambda_provider
   on:
     all_branches: true
