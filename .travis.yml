@@ -21,4 +21,4 @@ before_deploy:
    - zip -r deploy.zip index.js package.json node_modules/
 
 after_deploy:
-   - zip -l deploy.zip 
+   - unzip -l deploy.zip 
