@@ -11,7 +11,11 @@ deploy:
   handler_name: myHandler
   runtime: nodejs4.3
   publish: true 
-  #zip: [index.js, package.json]
+  #zip: index.js
+  zip: deploy.zip
   role: arn:aws:iam::710516728004:role/lambda_basic_execution
   on:
     all_branches: true
+
+before_deploy:
+   - zip -r deploy.zip index.js node_modules
