@@ -16,7 +16,7 @@ deploy:
   publish: true 
   #zip: index.js
   zip: deploy.zip
-  role: arn:aws:iam::710516728004:role/lambda_basic_execution
+  role: $ROLE
   on:
     all_branches: true
 
